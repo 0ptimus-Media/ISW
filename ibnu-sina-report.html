@@ -602,6 +602,36 @@
             <div class="chart-container">
                 <h3 style="text-align: center; color: #667eea; margin-bottom: 20px;">Engagement Rates by Content Format</h3>
                 <canvas id="engagementChart"></canvas>
+                <script>
+                    const engagementCtx = document.getElementById('engagementChart').getContext('2d');
+                    new Chart(engagementCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Reels', 'Stories', 'Carousel Ads', 'Video Posts', 'Carousels'],
+                            datasets: [{
+                                label: 'Engagement Rate (%)',
+                                data: [8.2, 6.5, 5.1, 4.8, 3.9],
+                                backgroundColor: [
+                                    '#667eea',
+                                    '#764ba2',
+                                    '#f093fb',
+                                    '#4facfe',
+                                    '#00f2fe'
+                                ]
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: true,
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    max: 10
+                                }
+                            }
+                        }
+                    });
+                </script>
             </div>
 
             <div class="stats-grid">
@@ -727,6 +757,36 @@
             <div class="chart-container">
                 <h3 style="text-align: center; color: #667eea; margin-bottom: 20px;">Current vs Recommended Budget Allocation</h3>
                 <canvas id="budgetChart"></canvas>
+                <script>
+                    const budgetCtx = document.getElementById('budgetChart').getContext('2d');
+                    new Chart(budgetCtx, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Paid Social', 'Content Creation', 'Analytics', 'Community Management', 'Influencer'],
+                            datasets: [{
+                                label: 'Current Budget Allocation',
+                                data: [40, 25, 15, 12, 8],
+                                backgroundColor: [
+                                    '#667eea',
+                                    '#764ba2',
+                                    '#f093fb',
+                                    '#4facfe',
+                                    '#00f2fe'
+                                ],
+                                borderWidth: 2
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: true,
+                            plugins: {
+                                legend: {
+                                    position: 'bottom'
+                                }
+                            }
+                        }
+                    });
+                </script>
             </div>
 
             <h3>✅ Current Strengths</h3>
@@ -793,5 +853,157 @@
 
             <div class="recommendation-card">
                 <h4>Pillar 2: Educational "Did You Know" Series (30-45 Seconds)</h4>
+                                    <p><strong>Objective:</strong> Position Ibnu Sina as a health authority and trusted information source</p>
+                    <p><strong>Content Format:</strong> Short, educational videos with subtitles and graphics</p>
+                    <ul>
+                        <li>Health benefits of specific treatments or preventative care</li>
+                        <li>Wellness tips and seasonal health advice</li>
+                        <li>Debunking common health myths</li>
+                        <li>Quick wellness hacks and home remedies</li>
+                        <li>Importance of regular check-ups and prevention</li>
+                    </ul>
+                    <p><strong>Production:</strong> In-house with minimal editing, featuring doctors or wellness experts</p>
+                    <p><strong>Frequency:</strong> 2-3 per week (organic + boosted)</p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>Pillar 3: Promotional Content (15-30 Seconds)</h4>
+                    <p><strong>Objective:</strong> Drive specific actions - appointments, consultations, or service inquiries</p>
+                    <p><strong>Content Format:</strong> Direct CTA with service highlights and limited-time offers</p>
+                    <ul>
+                        <li>New service launches with introductory pricing</li>
+                        <li>Seasonal health packages and promotions</li>
+                        <li>Referral incentives and loyalty program highlights</li>
+                        <li>Special discounts for first-time patients</li>
+                        <li>Appointment booking made easy - walk-through</li>
+                    </ul>
+                    <p><strong>Production:</strong> Product shoots, service highlights, and professional testimonials</p>
+                    <p><strong>Frequency:</strong> 1-2 per week (primarily paid)</p>
+                </div>
+            </div>
+
+            <!-- Section 4: Success Metrics -->
+            <div class="section">
+                <h2>📊 Success Metrics & KPIs</h2>
+                <div class="highlight-box">
+                    <h3>Primary KPIs to Track</h3>
+                    <p><strong>Engagement Metrics:</strong></p>
+                    <ul>
+                        <li>Average engagement rate target: 6-8% across all content</li>
+                        <li>Click-through rate (CTR): Minimum 2.5% for promotional content</li>
+                        <li>Video completion rate: Target 70%+ for Reels</li>
+                        <li>Shares and saves: Indicator of valuable, shareable content</li>
+                    </ul>
+                    <p><strong>Conversion Metrics:</strong></p>
+                    <ul>
+                        <li>Website traffic from Instagram: Month-over-month growth</li>
+                        <li>Appointment bookings attributed to Instagram: Track with unique promo codes</li>
+                        <li>Lead generation: Form submissions and DM inquiries</li>
+                        <li>Cost per acquisition (CPA): Target RM15-25 per appointment</li>
+                    </ul>
+                    <p><strong>Brand Metrics:</strong></p>
+                    <ul>
+                        <li>Follower growth rate: Target 5-10% monthly growth</li>
+                        <li>Audience sentiment: Monitor comments and DM tone</li>
+                        <li>Brand mentions and hashtags: Track reach and organic amplification</li>
+                        <li>Share of voice: Compared to competitors in wellness sector</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 5: Implementation Timeline -->
+            <div class="section">
+                <h2>🗓️ Implementation Timeline</h2>
+                <div class="highlight-box">
+                    <h3>Phase 1: Foundation (Weeks 1-2)</h3>
+                    <ul>
+                        <li>Audit current Instagram presence and competitor analysis</li>
+                        <li>Develop content calendar for 4 weeks</li>
+                        <li>Create content creation guidelines and brand voice document</li>
+                        <li>Set up tracking systems for KPIs and analytics</li>
+                    </ul>
+                    <h3>Phase 2: Launch (Weeks 3-4)</h3>
+                    <ul>
+                        <li>Begin Pillar 1 content production: Patient stories and behind-the-scenes</li>
+                        <li>Establish posting schedule: Daily Stories, 4-5 Reels weekly</li>
+                        <li>Launch initial ad campaigns with RM5,000 budget</li>
+                        <li>Monitor performance and optimize posting times</li>
+                    </ul>
+                    <h3>Phase 3: Scale (Month 2-3)</h3>
+                    <ul>
+                        <li>Introduce Pillar 2 and 3 content gradually</li>
+                        <li>Test different ad creatives and audience segments</li>
+                        <li>Increase ad spend based on winning campaigns</li>
+                        <li>Develop influencer partnership proposals</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 6: Budget Breakdown -->
+            <div class="section">
+                <h2>💰 Recommended Monthly Budget Allocation</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Allocation %</th>
+                            <th>Estimated Cost (RM)</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Paid Ads</strong></td>
+                            <td>45%</td>
+                            <td>RM4,500</td>
+                            <td>Feed ads, Stories ads, Reel ads, retargeting</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Content Creation</strong></td>
+                            <td>25%</td>
+                            <td>RM2,500</td>
+                            <td>Videography, photography, editing, graphics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tools & Analytics</strong></td>
+                            <td>10%</td>
+                            <td>RM1,000</td>
+                            <td>Scheduling tools, analytics software, competitor tools</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Community Management</strong></td>
+                            <td>12%</td>
+                            <td>RM1,200</td>
+                            <td>Responding to DMs, comments, engagement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Influencer Partnerships</strong></td>
+                            <td>8%</td>
+                            <td>RM800</td>
+                            <td>Micro-influencer collaborations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Section 7: Conclusion -->
+            <div class="section">
+                <div class="highlight-box">
+                    <h2>🎯 Next Steps & Recommendations</h2>
+                    <p>This strategy positions Ibnu Sina Wellness to leverage Instagram's dynamic content ecosystem for brand awareness, engagement, and conversions. By focusing on authentic storytelling, consistent content delivery, and data-driven optimization, the clinic can build a loyal online community and drive sustainable business growth.</p>
+                    <p><strong>Key recommendations:</strong></p>
+                    <ul>
+                        <li>Start with Pillar 1 content to build emotional connection</li>
+                        <li>Invest in professional video production for higher engagement</li>
+                        <li>Establish clear approval workflows for content quality</li>
+                        <li>Conduct weekly performance reviews and adjust strategy as needed</li>
+                        <li>Plan quarterly strategy reviews based on accumulated data</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
 
 Explain
