@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibnu Sina Wellness - Video Promotion Strategy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: 50px 50px;
+            opacity: 0.3;
+        }
+        
+        .logo-box {
+            background: white;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo-text {
+            color: #667eea;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin: 20px 0 10px 0;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .intro-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .intro-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .intro-section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .content {
+            padding: 50px 40px;
+        }
+        
+        .option-card {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-left: 6px solid #667eea;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .option-card.recommended {
+            border-left-color: #00b894;
+            background: linear-gradient(135deg, #a8edea15 0%, #fed6e315 100%);
+        }
+        
+        .option-card.recommended::before {
+            content: '⭐ RECOMMENDED';
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #00b894;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .option-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .option-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .option-title {
+            font-size: 1.8em;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+        
+        .section {
+            margin: 25px 0;
+        }
+        
+        .section-title {
+            font-size: 1.3em;
+            color: #2a5298;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+        
+        .timeline {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .timeline-item {
+            padding: 12px 0;
+            border-left: 3px solid #667eea;
+            padding-left: 20px;
+            margin-left: 10px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #667eea;
+            border-radius: 50%;
+            position: absolute;
+            left: -8px;
+            top: 15px;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #667eea;
+        }
+        
+        .timeline-item strong {
+            color: #667eea;
+        }
+        
+        .budget-box {
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .budget-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .budget-box li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .budget-box li::before {
+            content: '💰';
+            position: absolute;
+            left: 0;
+        }
+        
+        .pros-cons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .pros-box, .cons-box {
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .pros-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-left: 4px solid #00b894;
+        }
+        
+        .cons-box {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            border-left: 4px solid #d63031;
+        }
+        
+        .pros-box h4, .cons-box h4 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .pros-box ul, .cons-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .pros-box li, .cons-box li {
+            padding: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .best-for {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .best-for strong {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .comparison-table {
+            margin: 40px 0;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        th {
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .recommendation-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .recommendation-box h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        
+        .recommendation-box p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        
+        .cta-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        
+        .footer {
+            background: #1e3c72;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .pros-cons-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .option-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-box">
+                <div class="logo-text">IBNU SINA</div>
+            </div>
+            <h1>Video Promotion Strategy</h1>
+            <p>Facebook & Instagram Ads Campaign</p>
+        </div>
+
+        <div class="intro-section">
+            <h2>🎬 Choosing Your Video Strategy</h2>
+            <p>You have 5 excellent videos ready for your campaign. The question is: should you promote all 5 videos, or be more selective? Below are 3 strategic options to help you decide the best approach for your budget and goals.</p>
+        </div>
+
+        <div class="content">
+            <!-- OPTION 1 -->
+            <div class="option-card recommended">
+                <div class="option-header">
+                    <div class="option-number">1</div>
+                    <div class="option-title">Tournament-Style Testing</div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">📅 Process Timeline</div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <strong>Week 1:</strong> Test Video 1 vs Video 2 → identify winner
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Week 2:</strong> Test Video 3 vs Video 4 → identify winner
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Week 3:</strong> Test Round 1 winner vs Round 2 winner → identify semi-final winner
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Week 4:</strong> Test Video 5 (current top performer) vs Semi-final winner → identify HERO video
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Week 5+:</strong> Allocate full budget to hero video
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">💰 Budget Allocation</div>
+                    <div class="budget-box">
+                        <ul>
+                            <li><strong>Testing phase:</strong> Small budget split between 2 videos per week</li>
+                            <li><strong>Scaling phase:</strong> 100% budget to hero video</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">✂️ Video Editing Required</div>
+                    <div class="budget-box">
+                        <ul>
+                            <li><strong>Testing:</strong> Use current landscape format (no re-editing needed)</li>
+                            <li><strong>Scaling:</strong> Re-cut hero video only for Reels/Stories (9:16 vertical)</li>
+                            <li><strong>Cost:</strong> RM2,000-3,000 (1 video only)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pros-cons-grid">
+                    <div class="pros-box">
+                        <h4>✅ Advantages</h4>
+                        <ul>
+                            <li>Most cost-efficient - only re-edit 1 winning video</li>
+                            <li>Data-driven approach identifies best performer</li>
+                            <li>Concentrated budget maximizes reach of best video</li>
+                            <li>Reduces ad fatigue (audience sees fewer different ads)</li>
+                        </ul>
+                    </div>
+                    <div class="cons-box">
+                        <h4>⚠️ Considerations</h4>
+                        <ul>
+                            <li>Takes 4 weeks to identify hero video</li>
+                            <li>Other 4 videos don't get utilized after testing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="best-for">
+                    <strong>🎯 Best For:</strong>
+                    <p>Limited budget, want maximum ROI, data-driven decision making</p>
+                </div>
+            </div>
+
+            <!-- OPTION 2 -->
+            <div class="option-card">
+                <div class="option-header">
+                    <div class="option-number">2</div>
+                    <div class="option-title">Sequential Retargeting</div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">📅 Process Flow</div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <strong>Phase 1:</strong> Run 2 "general appeal" videos to cold audience
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Phase 2:</strong> A/B test to identify strongest performer
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Phase 3:</strong> Retarget non-converters with remaining videos (2nd, 3rd, 4th, 5th) in sequence
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Result:</strong> Different videos shown based on funnel stage
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">💰 Budget Allocation</div>
+                    <div class="budget-box">
+                        <ul>
+                            <li><strong>50%</strong> Cold audience (2 general videos)</li>
+                            <li><strong>50%</strong> Warm retargeting (remaining 3 videos)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">✂️ Video Editing Required</div>
+                    <div class="budget-box">
+                        <ul>
+                            <li>Re-cut <strong>all 5 videos</strong> for Reels/Stories format</li>
+                            <li><strong>Cost:</strong> RM5,000-8,000 (all videos)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pros-cons-grid">
+                    <div class="pros-box">
+                        <h4>✅ Advantages</h4>
+                        <ul>
+                            <li>All videos get utilized</li>
+                            <li>Multiple touchpoints increase conversion chances</li>
+                            <li>Different messages for different audience temperatures</li>
+                            <li>Reduces ad fatigue through variety</li>
+                        </ul>
+                    </div>
+                    <div class="cons-box">
+                        <h4>⚠️ Considerations</h4>
+                        <ul>
+                            <li>Must re-edit all 5 videos upfront (higher initial cost)</li>
+                            <li>More complex campaign management</li>
+                            <li>Requires larger budget to run effectively</li>
+                            <li>Need sufficient retargeting pool (warm audience)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="best-for">
+                    <strong>🎯 Best For:</strong>
+                    <p>Moderate to high budget, want to use all assets, nurture-focused strategy</p>
+                </div>
+            </div>
+
+            <!-- OPTION 3 -->
+            <div class="option-card">
+                <div class="option-header">
+                    <div class="option-number">3</div>
+                    <div class="option-title">Run All 5 Simultaneously</div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">📅 Process</div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <strong>Launch:</strong> All 5 videos at once to same cold audience
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Budget:</strong> Equal budget split across all 5
+                        </div>
+                        <div class="timeline-item">
+                            <strong>CTA:</strong> Same call-to-action (form fill) on all videos
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Optimization:</strong> Let Meta algorithm distribute to best-performing
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">💰 Budget Allocation</div>
+                    <div class="budget-box">
+                        <ul>
+                            <li><strong>20%</strong> per video (split evenly across all 5)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">✂️ Video Editing Required</div>
+                    <div class="budget-box">
+                        <ul>
+                            <li>Re-cut <strong>all 5 videos</strong> for Reels/Stories format</li>
+                            <li><strong>Cost:</strong> RM5,000-8,000 (all videos)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pros-cons-grid">
+                    <div class="pros-box">
+                        <h4>✅ Advantages</h4>
+                        <ul>
+                            <li>Fastest to market (no testing phase)</li>
+                            <li>All content gets exposure immediately</li>
+                            <li>Meta algorithm auto-optimizes to best performers</li>
+                            <li>Variety reduces immediate ad fatigue</li>
+                        </ul>
+                    </div>
+                    <div class="cons-box">
+                        <h4>⚠️ Considerations</h4>
+                        <ul>
+                            <li>Budget fragmentation reduces impact per video</li>
+                            <li>Higher production cost (edit all 5 videos upfront)</li>
+                            <li>Confuses audience with too many similar messages</li>
+                            <li>Prevents algorithm learning (need 50+ conversions per ad set)</li>
+                            <li>Least efficient use of budget</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="best-for">
+                    <strong>🎯 Best For:</strong>
+                    <p>High budget, want maximum coverage quickly, multiple distinct messages</p>
+                </div>
+            </div>
+
+            <!-- COMPARISON TABLE -->
+            <h2 style="text-align: center; color: #1e3c72; margin: 50px 0 30px 0; font-size: 2em;">📊 Quick Comparison</h2>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>Option 1: Tournament</th>
+                            <th>Option 2: Sequential</th>
+                            <th>Option 3: Simultaneous</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Budget Required</strong></td>
+                            <td>Low-Medium</td>
+                            <td>Medium-High</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time to Results</strong></td>
+                            <td>4-5 weeks</td>
+                            <td>2-3 weeks</td>
+                            <td>Immediate</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Editing Cost</strong></td>
+                            <td>RM2,000-3,000</td>
+                            <td>RM5,000-8,000</td>
+                            <td>RM5,000-8,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ROI Potential</strong></td>
+                            <td>Highest</td>
+                            <td>Medium-High</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Campaign Complexity</strong></td>
+                            <td>Low</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td><strong>All Videos Used?</strong></td>
+                            <td>No</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- RECOMMENDATION -->
+            <div class="recommendation-box">
+                <h2>💡 Our Recommendation</h2>
+                <p><strong>Option 1: Tournament-Style Testing</strong> is the most strategic approach for most budgets.</p>
+                <p>This data-driven method ensures you invest your full budget into the video that performs best with your actual audience, rather than guessing which one will work.</p>
+                <p style="margin-top: 20px; font-size: 1.1em;">By testing in stages, you'll identify your "hero" video and maximize ROI while minimizing production costs.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p style="font-size: 1.1em; margin-bottom: 10px;"><strong>Ibnu Sina Wellness - Video Strategy Report</strong></p>
+            <p>Report Date: December 16, 2025</p>
+            <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">Ready to discuss which option works best for your goals and budget?</p>
+        </div>
+    </div>
+</body>
+</html>
